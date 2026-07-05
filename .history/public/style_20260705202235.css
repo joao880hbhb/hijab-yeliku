@@ -19,14 +19,9 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: Inter, "Segoe UI", Roboto, sans-serif;
+  font-family: Inter, 'Segoe UI', Roboto, sans-serif;
   color: var(--text);
-  background: radial-gradient(
-    circle at top left,
-    #17224f 0%,
-    var(--bg) 45%,
-    #060a14 100%
-  );
+  background: radial-gradient(circle at top left, #17224f 0%, var(--bg) 45%, #060a14 100%);
   min-height: 100vh;
 }
 
@@ -149,11 +144,7 @@ main {
   align-items: center;
   justify-content: center;
   height: 400px;
-  background: linear-gradient(
-    135deg,
-    rgba(124, 140, 255, 0.1),
-    rgba(65, 216, 199, 0.1)
-  );
+  background: linear-gradient(135deg, rgba(124, 140, 255, 0.1), rgba(65, 216, 199, 0.1));
   border-radius: 16px;
   border: 1px solid var(--border);
   backdrop-filter: blur(12px);
@@ -192,9 +183,7 @@ main {
   background: var(--panel);
   border: 1px solid var(--border);
   backdrop-filter: blur(12px);
-  transition:
-    transform 300ms,
-    border-color 300ms;
+  transition: transform 300ms, border-color 300ms;
 }
 
 .product-card:hover {
@@ -286,9 +275,7 @@ main {
   justify-content: center;
   cursor: pointer;
   box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
-  transition:
-    transform 300ms,
-    box-shadow 300ms;
+  transition: transform 300ms, box-shadow 300ms;
   border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
