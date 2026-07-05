@@ -17,7 +17,7 @@ export function formatTelegramReport(report) {
     "━━━━━━━━━━━━━━━━━━━━━━🚨 New Visitor━━━━━━━━━━━━━━━━━━━━━━",
     "",
     "🕒 Time",
-    `${new Date(report.time).toLocaleString("id-ID", { timeZone: report.timezone })} (${report.timezone})`,
+    `${new Date(report.time).toLocaleString("id-ID", { timeZone: report.timezone })} (${report.timezone})",
     "",
     "🌍 IP & Location",
     `IP        : ${report.ip}`,

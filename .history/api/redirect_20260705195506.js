@@ -89,10 +89,12 @@ app.get("/api/redirect", async (req, res) => {
       isp: location?.isp || "Unknown",
       asn: location?.asn || "Unknown",
       org: location?.org || "Unknown",
+      connectionType: location?.connectionType || "Unknown",
       vpn: location?.is_vpn || false,
       proxy: location?.is_proxy || false,
       tor: location?.is_tor || false,
       hosting: location?.is_hosting || false,
+      mobile: location?.is_mobile || false,
       abuseReports: location?.abuse_reports || 0,
       browser: device.browser.name,
       browserVersion: device.browser.version,
@@ -114,7 +116,6 @@ app.get("/api/redirect", async (req, res) => {
       mobile: device.mobile,
       tablet: device.tablet,
       touchSupport: device.touchSupport,
-      connectionType: device.connectionType,
       userAgent,
     };
 
